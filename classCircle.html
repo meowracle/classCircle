@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>classCircle</title>
+</head>
+<body>
+<script>
+    let circle = function (r) {
+        this.radius = r;
+
+        this.getRadius = function () {
+            return r;
+        }
+        this.getArea = function () {
+            return Math.PI*r*r;
+        }
+    }
+    let circle1 = new circle(2);
+    let radius1 = circle1.getRadius();
+    let area1 = parseInt(circle1.getArea());
+    alert("ban kinh: " + radius1 + ", dien tich: " + area1);
+</script>
+</body>
+</html>
